@@ -1,4 +1,4 @@
-# K3d
+# k3d
 
 Learning kubernetes by using its small variant k3d.
 
