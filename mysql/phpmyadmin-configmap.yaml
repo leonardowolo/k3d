@@ -1,0 +1,10 @@
+
+# Phpmyadmin- Used by the phpmyadmin deployment manifest
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: phpmyadmin-configmap
+data:
+  pma_arbitary: "1"
+  pma_host: msqldb-service
+  pma_port: "3306"

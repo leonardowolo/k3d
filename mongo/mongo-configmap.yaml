@@ -1,0 +1,8 @@
+
+# MongoDB Secret - Used by the mongo-express-deployment manifest
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: express-configmap
+data:
+  database_url: mongodb-service

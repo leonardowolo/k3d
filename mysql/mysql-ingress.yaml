@@ -1,0 +1,19 @@
+
+
+# Mongo Ingress manifest - Used by mongo application
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: phpmyadmin-ingress
+spec:
+  rules:
+  - host: phpmyadmin.development.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: phpmyadmin-service
+            port:
+              number: 80
